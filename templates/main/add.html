@@ -1,0 +1,14 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'main/add.css' %}">
+
+<div class="square">
+<form action="" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="form">
+        {{ form.as_p }}
+        </div>
+    <input class="submit" type="submit" value="ADD">
+</form>
+</div>
+
+

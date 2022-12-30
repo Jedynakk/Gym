@@ -1,0 +1,10 @@
+{% include 'main/header.html' %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'app/Exe_list.css' %}">
+<h1 class="header">ALL EXERCISE</h1>
+<ul>
+    {% for e in exercises %}
+       <li class="lista"> <a class="teks" href="{% url 'exercise_view' e.id %}"><button class="ramka"><div class="exe">{{ e.name }}</div></button></a></li>
+    {% endfor %}
+</ul>
+

@@ -1,0 +1,9 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'main/add.css' %}">
+
+<form method="post">
+    {% csrf_token %}
+    <input type="checkbox" value="exercise" placeholder="exercise" >
+    <input type="checkbox" value="day" placeholder="day" >
+    <input type="submit">
+</form>

@@ -1,0 +1,21 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static '/accounts/signin/add_user.css' %}">
+<body class="body">
+
+<h1 class="head">SIGN IN</h1>
+<div class="log">
+    <div class="log_square">
+        <div class="ramka">
+            <form action="" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="login_form">
+                    {{ form.as_p }}
+                </div>
+                <button class="login_button"><input class="login_button_tekst" type="submit" value="ADD USER"></button>
+
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+</body>

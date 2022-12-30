@@ -1,0 +1,16 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static '/main/nav.css' %}">
+<div class="nav_back">
+    <body class="body">
+    <ul class="nav_links">
+        <li><h1><a class="list" href="{% url 'main_page' %}">HOME</a></h1></li>
+    <li><h1><a class="list" href="{% url 'add_exercise' %}">ADD EXERCISE</a></h1></li>
+    <li><h1><a class="list" href="{% url 'list_exercise' %}">VIEW ALL EXERCISES</a></h1></li>
+    <li><h1><a class="list" href="{% url 'add_plan' %}">NEW PLAN</a></h1></li>
+    <li><h1><a class="list" href="{% url 'list_plan' %}">ALL PLANS</a></h1></li>
+    <li><h1><a class="logout" href="{% url 'logout' %}"> LOGOUT </a></h1></li>
+    </ul>
+
+    </body>
+</div>

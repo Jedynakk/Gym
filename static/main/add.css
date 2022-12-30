@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=League+Spartan&display=swap');
+
+
+.square{
+    height: 520px;
+    width: 520px;
+    background-color: white;
+    position: relative; top: 1px; left: 32%;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
+.fields {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    height: 45px;
+    width: 300px;
+    position: relative;
+    background-color: #ffff;
+    border-bottom: 1px solid black;
+    text-decoration: none;
+}
+
+.select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline:0;
+    box-shadow: none;
+    border-radius: 0;
+    height: 45px;
+    width: 300px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    text-decoration: none;
+
+}
+
+.title{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 35px;
+    color: #0c331f;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative; left: 44%; top: 12%;
+    z-index: 999;
+
+}
+
+
+.form{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: right;
+    position: relative; right: 100px;  top: 200px;
+}
+
+.submit{
+    border: none;
+    position: relative; left:35%;  top: 200px;
+    height: 32px;
+    width: 128px;
+    background-color:  #00342f;
+     font-family: 'League Spartan', sans-serif;
+    font-size: 16px;
+    color: white;
+
+}

@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=League+Spartan&display=swap');
+
+.body {
+    background-image: linear-gradient(to left, #00342f, #011c1b);
+    overflow: hidden;
+}
+
+
+.log{
+    height: 600px;
+    width: 600px;
+    z-index: 100;
+    background-color: white;
+    position: relative; left: 410px;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.head {
+    font-size: 50px;
+    font-family: 'League Spartan', sans-serif;
+    position: relative;left: 1400px;top:100px;
+    color: #00342f;
+    z-index: 900;
+}
+
+
+.fieldsy{
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    height: 45px;
+    width: 300px;
+    position: relative; left:-25px;
+    background-color: #ffff;
+    border-bottom: 1px solid black;
+    text-decoration: none;
+
+}
+
+
+.login_form {
+    font-size: 15px;
+    font-family: 'League Spartan', sans-serif;
+    color: white;
+    position: relative;left:185px;top:300px;
+
+}
+
+
+.login_button {
+    width: 300px;
+    height: 45px;
+    border-radius: 3px;
+    border:none;
+    background-image: linear-gradient(to left, #00342f, #011c1b);
+    cursor: pointer;
+    position: relative;left:160px;top:300px;
+}
+
+
+.login_button_tekst {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'League Spartan', sans-serif;
+    color: white;
+    background: none;
+    border: none;
+}
+
+.sign_up_ad {
+    font-size: 17px;
+    font-family: 'League Spartan', sans-serif;
+    color: black;
+    position: relative;left:180px;top:300px;
+    text-decoration: none;
+}
+
+.link{
+    font-size: 17px;
+    font-family: 'League Spartan', sans-serif;
+    color: #075e69;
+    text-decoration: none;
+}
+

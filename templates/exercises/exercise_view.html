@@ -1,0 +1,22 @@
+{% include 'main/header.html' %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'app/exe_view.css' %}">
+
+<div class="square">
+
+<h1 class="name">{{ exercise.name }}</h1>
+<p class="part">{{ exercise.get_muscle_display}}</p>
+    <p class="description">{{ exercise.description }}</p>
+
+
+    <ul class="links">
+<li><a class="link" href="{% url 'add_to_plan' exercise.id %}">ADD TO PLAN</a></li>
+        <li> </li>
+<li><a class="link" href="{% url 'add_pr' exercise.id %}">NEW RECORD</a></li>
+<li> </li>
+<li><a class="link"  href="{% url 'pr_list' exercise.id %}">VIEW UR PAST RECORDS</a></li>
+</ul>
+</form>
+
+
+</div>

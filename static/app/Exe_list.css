@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=League+Spartan&display=swap');
+
+.header{
+    font-size: 50px;
+    font-family: 'League Spartan', sans-serif;
+    position: relative;left: 600px;top:70px;
+    color: #0c331f;
+    z-index: 900;
+}
+
+.ramka{
+    height: 400px;
+    width: 1000px;
+    background-color: #184A45FF;
+    display: inline-block;
+    border-radius: 50px;
+    position: relative; left: 150px;
+    margin: 30px;
+}
+
+.teks{
+    font-size: 70px;
+    font-family: 'League Spartan', sans-serif;
+    color: #ffff;
+    z-index: 999;
+    position: relative;top: 20px;left: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.lista{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 45px;
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    text-transform: uppercase;
+
+}
+
+.exe{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    text-transform: uppercase;
+    position: relative; left: 50px; top:50px;
+}

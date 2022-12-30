@@ -1,0 +1,14 @@
+{% include 'main/header.html' %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'app/plan_view.css' %}">
+
+<h2 class="header">{{ plan.name }}<br>
+{{ plan.description}}<br></h2>
+
+
+<form action="{% url 'plan_view' plan.id %}" method="post">
+    {% csrf_token %}
+    <input type="submit" name="current" value="AKTUALNY">
+</form>
+{% include 'plan/plan.html' %}
+

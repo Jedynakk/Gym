@@ -1,0 +1,23 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'app/plan_view.css' %}">
+
+<h1 class="plan_name">CURRENT PLAN {{ plan.name }}<br></h1>
+<h3 class="des">{{ plan.description }}<br></h3>
+
+
+{% for day in dayinplan %}
+    <div class="ramka">
+        {% for d in day_name %}
+            {% if d.0 == day %}
+                <div class="day">{{ d.1 }}</div>
+            {% endif %}
+        {% endfor %}
+        {% for exeplan in exerciseplan %}
+            {% if exeplan.day_name == day %}
+                <li class="lista"></li>
+                    <a class="exe" href="{% url 'exercise_view' exeplan.exercise.id %}"> {{ exeplan.exercise.name }}</a>
+                </li>
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endfor %}

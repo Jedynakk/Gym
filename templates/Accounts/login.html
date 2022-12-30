@@ -1,0 +1,18 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static '/accounts/login/login.css' %}">
+<body class="body">
+<h1 class="head">LOGIN</h1>
+
+<div class="ramka">
+    <div class="log">
+        <form action="" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="login_form">
+                {{ form.as_p }}
+            </div>
+            <button class="login_button"><input class="login_button_tekst" type="submit" value="ZALOGUJ"></button>
+            <p class="sign_up_ad">Jeśli nie masz konta kliknij <a class="link" href="{% url 'add_user' %}">TUTAJ</a></p>
+        </form>
+    </div>
+    </div>
+</body>

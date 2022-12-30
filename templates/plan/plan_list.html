@@ -1,0 +1,15 @@
+{% include 'main/header.html' %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'app/Exe_list.css' %}">
+
+<h1 class="header">ALL PLANS</h1>
+
+<ul>
+    {% for p in plan %}
+        <li class="lista"><a href="{% url 'plan_view' p.id %}"><button class="ramka"><div class="exe">{{ p.name }}</div></button></a>        {{ p.description }}
+</li>
+    {% endfor %}
+</ul>
+
+
+
