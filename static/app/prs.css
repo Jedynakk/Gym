@@ -1,0 +1,29 @@
+.title {
+    font-size: 70px;
+    font-family: 'League Spartan', sans-serif;
+    color: #b1003e;
+    position: relative;
+    left: 31%;
+
+}
+
+.li {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    text-transform: uppercase;
+    position: relative;
+    left: 20%;
+    top: 50px;
+}
+
+.ul {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 45px;
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    text-transform: uppercase;
+}

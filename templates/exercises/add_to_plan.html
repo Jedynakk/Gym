@@ -1,5 +1,18 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'app/AddToPlan.css' %}">
+<body class="body">
+    <div class="square">
+
+    <h1 class="title">ADD EXERCISE TO PLAN</h1>
 <form action="" method="POST" enctype="multipart/form-data">
     {% csrf_token %}
+    <div class="form">
         {{ form.as_p }}
-    <input type="submit">
+        </div>
+    <input class="submit" type="submit" value="ADD">
 </form>
+
+
+</div>
+<a class="back_button" href="{%url "main_page" %}">BACK</a>
+</body>

@@ -1,6 +1,18 @@
-<h1>NEW PR</h1>
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'main/add.css' %}">
+<h1 class="title" >NEW PR</h1>
+<body class=body>
+    <div class="square">
 <form action="" method="POST" enctype="multipart/form-data">
     {% csrf_token %}
+    <div class="form">
+
         {{ form.as_p }}
-    <input type="submit">
+    </div>
+    <input class="submit" type="submit" value="ADD">
+
 </form>
+<a class="back_button" href="{%url "main_page" %}">BACK</a>
+</div>
+</body>

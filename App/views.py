@@ -22,7 +22,7 @@ class AddExerciseView(View):
         return render(request, 'exercises/add_exercise.html', {'form': form})
 
     def post(self, request):
-        form = AddExerciseForm(request.POST)
+        form = AddExerciseForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
             return redirect('main_page')
@@ -108,7 +108,7 @@ class AddPrView(View):
             e.exercise = exercise
             e.save()
             form.save()
-            return redirect('main_page')
+            return redirect('add_pr')
         return render(request, 'exercises/new_pr.html', {'exercise': exercise, 'form': form})
 
 

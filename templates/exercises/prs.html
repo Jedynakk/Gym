@@ -1,3 +1,9 @@
-<h1>PRSSS</h1>
-
-
+{% include 'main/header.html' %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'app/prs.css' %}">
+<h1 class="title">PERSONAL RECORDS</h1>
+<ul class="li">
+{% for p in exercise.pr_set.all %}
+<li class="li">{{p.weight}}    {{p.get_pr_display}}   {{p.reps}}</li>
+{% endfor %}
+</ul>

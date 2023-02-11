@@ -69,6 +69,8 @@ class PR(models.Model):
     weight = models.PositiveIntegerField(default=0)
     reps = models.PositiveIntegerField(default=0)
 
+    def __str__(self):
+        return self.name
 
 class CurrentPlan(models.Model):
     plan = models.ForeignKey(Plan, on_delete=models.CASCADE)

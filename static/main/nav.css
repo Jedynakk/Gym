@@ -1,38 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=League+Spartan&display=swap');
 
-.body{
-    background-color: #ffffff;
+.body {
+    background: linear-gradient(90deg, rgba(45, 44, 44, 1) 0%, rgba(0, 0, 0, 1) 100%);
     margin: 0;
     overflow-x: hidden;
 }
 
 
-.li{
+.li {
     font-family: 'League Spartan', sans-serif;
     font-size: 10px;
-    color: #0c331f;
-    text-decoration: none;}
+    color: #ffffff;
+    text-decoration: none;
+}
 
-.list{
+.list {
     font-family: 'League Spartan', sans-serif;
     font-weight: 300;
     font-size: 28px;
-    color: #0c331f;
+    color: #b1003e;
     text-decoration: none;
 }
 
 
-.logout{
+.logout {
     font-family: 'League Spartan', sans-serif;
     font-weight: 300;
     font-size: 28px;
-    color: #0c331f;
+    color: #b1003e;
     text-decoration: none;
     padding-left: 250px;
 }
 
 
-.nav_links{
+.nav_links {
     list-style: none;
 }
 
@@ -42,14 +43,15 @@
 }
 
 
-.nav_links li a{
+.nav_links li a {
     transition: all 0.3s ease 0s;
 }
 
-.nav_links li a:hover{
-    color: #FC766AFF;
+.nav_links li a:hover {
+    color: rgb(133, 255, 247);
 }
-.button{
+
+.button {
     height: 64px;
     width: 64px;
 }
